@@ -47,7 +47,11 @@ NmraDcc  Dcc;
 void notifyDccAccTurnoutOutput(uint16_t Addr, uint8_t Direction, uint8_t OutputPower) {
   // Get the current decoder address
   uint16_t myAddress = Dcc.getAddr();
-  int turnoutIdx = myAddress - Addr;
+  Serial.print("Turnout from addr ");
+  Serial.print(Addr, HEX);
+  Serial.print(" to ");
+  Serial.println(myAddress, HEX);
+  int turnoutIdx = Addr - DECODER_ADDR - 1;
 
   if (turnoutIdx >= 0 && turnoutIdx < 4) {
     if(Direction == 0) {
@@ -63,10 +67,27 @@ void notifyDccAccTurnoutOutput(uint16_t Addr, uint8_t Direction, uint8_t OutputP
 
 }
 
+
+struct CVPair
+{
+  uint16_t  CV;
+  uint8_t   Value;
+};
+
+CVPair FactoryDefaultCVs[] =
+{
+  {CV_ACCESSORY_DECODER_ADDRESS_LSB, DECODER_ADDR & 0xFF},
+  {CV_ACCESSORY_DECODER_ADDRESS_MSB, DECODER_ADDR >> 8},
+};
+
+uint8_t FactoryDefaultCVIndex = 0;
+
 void notifyCVResetFactoryDefault() {
   // Reset requested, set default address...
-  Dcc.setCV(CV_ACCESSORY_DECODER_ADDRESS_LSB, DECODER_ADDR & 0xFF);
-  Dcc.setCV(CV_ACCESSORY_DECODER_ADDRESS_MSB, DECODER_ADDR >> 8);  
+  Serial.println("Reset requested");
+  // Dcc.setCV(CV_ACCESSORY_DECODER_ADDRESS_LSB, DECODER_ADDR & 0xFF);
+  // Dcc.setCV(CV_ACCESSORY_DECODER_ADDRESS_MSB, DECODER_ADDR >> 8);
+  FactoryDefaultCVIndex = sizeof(FactoryDefaultCVs)/sizeof(CVPair);
 }
 
 // void notifyCVAck(void) {
@@ -77,7 +98,10 @@ void notifyCVResetFactoryDefault() {
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  Serial.begin(115200);
+  uint8_t maxWaitLoops = 255;
+  while(!Serial && maxWaitLoops--)
+    delay(20);
 
   // init the pin for each turnout
   for (int turnoutIdx=0; i<4; i++) {
@@ -89,7 +113,11 @@ void setup() {
 
   // init the NMRA DCC library
   Dcc.pin(digitalPinToInterrupt(DCC_INPUT_PIN), DCC_INPUT_PIN, 1);
-  Dcc.init(MAN_ID_DIY, 1, FLAGS_MY_ADDRESS_ONLY | FLAGS_DCC_ACCESSORY_DECODER, 0);
+  Dcc.init(MAN_ID_DIY, 10, CV29_ACCESSORY_DECODER | CV29_OUTPUT_ADDRESS_MODE, 0);
+
+  // Dcc.init(MAN_ID_DIY, 20, /* FLAGS_MY_ADDRESS_ONLY |*/ FLAGS_DCC_ACCESSORY_DECODER, 0);
+
+  Serial.println("Init done");
 }
 
 void loop() {
@@ -97,6 +125,12 @@ void loop() {
 
   // call the NMRA DCC singleton process
   Dcc.process();
+
+  if (FactoryDefaultCVIndex && Dcc.isSetCVReady()) {
+    Serial.println("Write default address");
+    FactoryDefaultCVIndex --;
+    Dcc.setCV(FactoryDefaultCVs[FactoryDefaultCVIndex].CV, FactoryDefaultCVs[FactoryDefaultCVIndex].Value);
+  } 
 
   // for each turnout, read the button
   for (int turnoutIdx=0; turnoutIdx<4; turnoutIdx++) {
@@ -112,5 +146,19 @@ void loop() {
       }
     }
   }
+}
 
+void notifyDccMsg( DCC_MSG * Msg)
+{
+  if (Msg->Data[0] != 0xFF){ 
+    Serial.print("notifyDccMsg: ");
+    Serial.print(Dcc.getAddr(), HEX);
+    Serial.print(" ");
+    for(uint8_t i = 0; i < Msg->Size; i++)
+    {
+      Serial.print(Msg->Data[i], HEX);
+      Serial.write(' ');
+    }
+    Serial.println();
+  } 
 }
