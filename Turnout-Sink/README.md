@@ -28,10 +28,11 @@ Use a RJ45 cable to port
 | 7           | 16ACBack | White/Brown     | 7 |
 | 4           | 5Vcc     | Blue            | 4 |
 | 5           | GND      | White/Blue      | 5 |
-| 3           | Signal   | White/Orange    | 1 |
+| 3           | Signal   | White/Orange    | 1 (crossover RJ cable)|
+| 1           | Signal   | White/Orange    | 1 (straight RJ cable)|
 
 ## Pictures
 
 ![TurnoutRelayPCB](/Turnout-Sink/images/PCB_PCB_Turnout-Relay-Sink_2025-11-19.png?raw=true)
 
-![TurnoutRelay3D](/Turnout-Sink/images/turnout-relay-sink.png?raw=true)
+![TurnoutRelay3D](/images/turnout-relay-sink.png?raw=true)
