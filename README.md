@@ -1,5 +1,5 @@
-# DCCFleischmannAccessories
-Electronic modules to control, pilot of Fleischmann Turnouts
+# DCC and DIY Turnout Accessories
+Electronic modules to control, pilot of Fleischmann or Kato Turnouts
 
 
 ## Mimic pannel
