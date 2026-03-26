@@ -11,7 +11,7 @@ Future version 3.1
 Current version 2.0
 ![MimicPanelPCB 2.0 PCB](/images/mimicpannel.jpg?raw=true)
 
-## Turnout modules
+## Fleischmann Turnout modules
 ### Turnout Sink
 Contains a relay and an ethernet RJ receiver to pilot one turnout
 
@@ -27,3 +27,5 @@ Contains a connector for the AC16 power supply, 4 ethernet RJ connectors to supp
 Contains header to receive LED, buttons, DCC signal and connect to an Arduino UnoR4 and a `Turnout Source` module.
 
 ![TurnoutController3D](/images/controller.png?raw=true)
+
+## Kato Turnout modules
