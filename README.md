@@ -1,17 +1,25 @@
 # DCC and DIY Turnout Accessories
 Electronic modules to control, pilot of Fleischmann or Kato Turnouts
 
+## Kato modules
 
-## Mimic pannel
-An arduino Uno header to comtrol up to 4 Fleischmann motorised turnouts.
+### Mimic pannel
+An arduino Uno header to control up to 4 Kato motorised turnouts.
 
-Future version 3.1
-![MimicPanelPCB 3.1](/images/mimicpannelheader.png?raw=true)
+Kato wip version 5.0
+* DCC Shield ![Kato MimicPanelPCB 5.0 DCC](/images/katomimicdcc.png?raw=true)
+* DC Shield ![Kato MimicPanelPCB 5.0 DC](/images/katomimicdcc.png?raw=true)
 
-Current version 2.0
+## Fleischmann modules
+### Mimic pannel
+An arduino Uno header to control up to 4 Fleischmann motorised turnouts.
+
+Fleischmann tested version 2.0
 ![MimicPanelPCB 2.0 PCB](/images/mimicpannel.jpg?raw=true)
 
-## Fleischmann Turnout modules
+Fleischmann untested version 3.1
+![MimicPanelPCB 3.1](/images/mimicpannelheader.png?raw=true)
+
 ### Turnout Sink
 Contains a relay and an ethernet RJ receiver to pilot one turnout
 
@@ -27,5 +35,3 @@ Contains a connector for the AC16 power supply, 4 ethernet RJ connectors to supp
 Contains header to receive LED, buttons, DCC signal and connect to an Arduino UnoR4 and a `Turnout Source` module.
 
 ![TurnoutController3D](/images/controller.png?raw=true)
-
-## Kato Turnout modules

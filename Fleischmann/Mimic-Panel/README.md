@@ -42,8 +42,8 @@ Only store the code for the version 2 but it is ready for the verrsion 3.x. To u
 ### 3.x (WIP -- not tested)
 * add a DCC decoder/encoder
 * add support to programmable DCC address
-* ![MimicPanelPCB 3.1](/Mimic-Panel/images/PCB_PCB_Mimic-Panel_2025-12-06.png?raw=true)
+* ![MimicPanelPCB 3.1](/Fleischmann/Mimic-Panel/images/PCB_PCB_Mimic-Panel_2025-12-06.png?raw=true)
 
 ### 2.x
 * initial and tested version
-* ![MimicPanelPCB 2.0](/Mimic-Panel/images/PCB_PCB_Mimic-Panel_2025-11-19.png?raw=true)
+* ![MimicPanelPCB 2.0](/Fleischmann/Mimic-Panel/images/PCB_PCB_Mimic-Panel_2025-11-19.png?raw=true)
