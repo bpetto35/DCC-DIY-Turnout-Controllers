@@ -8,7 +8,7 @@ An arduino Uno header to control up to 4 Kato motorised turnouts.
 
 Kato wip version 5.0
 * DCC Shield ![Kato MimicPanelPCB 5.0 DCC](/images/katomimicdcc.png?raw=true)
-* DC Shield ![Kato MimicPanelPCB 5.0 DC](/images/katomimicdcc.png?raw=true)
+* DC Shield ![Kato MimicPanelPCB 5.0 DC](/images/katomimicdc12v.png?raw=true)
 
 ## Fleischmann modules
 ### Mimic pannel
