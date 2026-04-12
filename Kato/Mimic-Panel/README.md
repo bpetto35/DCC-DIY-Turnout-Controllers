@@ -34,7 +34,8 @@
 
 ## Layout
 
-### Turnouts on DCC and DC shield
+### 3D vision
+![3D DCC occupancy](/Kato/Mimic-Panel/images/DCCturnout3D.png?raw=true)
 
 ### Pins
 | Pin # | Function |
