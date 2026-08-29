@@ -22,7 +22,7 @@
 // JMRI input
 #define JMRI_INPUT_PIN 2
 
-#define CMRI_ID_SIGN "TCO\0"
+#define CMRI_ID_SIGN 0x54434F00UL
 
 
 
@@ -44,9 +44,9 @@ Turnout turnouts[4] = {
 };
 
 struct CMRI_ID{
-  char tag[4];
-  uint8_t vers;
-  uint8_t cmriId;
+  uint32_t tag;
+  uint32_t vers;
+  uint32_t cmriId;
 };
 
 CMRI cmri;
@@ -82,7 +82,7 @@ void setup() {
 
 void loop() {
   unsigned long now = millis();
-  cmri.process()
+  cmri.process();
 
   // for each turnout, read the button
   for (int turnoutIdx=0; turnoutIdx<4; turnoutIdx++) {
