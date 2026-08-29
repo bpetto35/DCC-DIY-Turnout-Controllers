@@ -1,6 +1,11 @@
 # DCC and DIY Turnout Accessories
 Electronic modules to control, pilot of Fleischmann or Kato Turnouts
 
+## CMRI module
+* PCB is identical to Fleischmann version 2.0
+* No relay, just LED and button but reuse the previous PCB
+* JMRI will need DCC decoder to effectively operate the turnout
+
 ## Kato modules
 
 ### Mimic pannel
