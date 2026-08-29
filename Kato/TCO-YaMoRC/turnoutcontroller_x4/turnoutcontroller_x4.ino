@@ -19,10 +19,9 @@
 // Turnout #4 input and output
 #define T4_BUTTON_PIN 4
 #define T4_LED_RELAY_PIN 11
-// JMRI input
-#define JMRI_INPUT_PIN 2
 
-#define CMRI_ID_SIGN 0x54434F00UL
+
+#define CMRI_ID_SIGN 0x004F4354UL
 
 
 
@@ -49,7 +48,7 @@ struct CMRI_ID{
   uint32_t cmriId;
 };
 
-CMRI cmri;
+CMRI cmri(0, 4, 4);
 
 
 void setup() {
@@ -63,6 +62,7 @@ void setup() {
     if (cmriId.tag != CMRI_ID_SIGN)
       cmriId.cmriId = 0;
   }
+  Serial.begin(9600);
   cmri.set_address(cmriId.cmriId);
   // init serial
   //Serial.begin(115200);
