@@ -15,7 +15,7 @@ Reuse the first design for Fleischmann turnout PCB
 ## Layout
 
 ### Turnouts
-| Turnout # | Button Pin | LED and Relay Pin |
+| Turnout # | Button Pin | LED Pin |
 |---|---|---|
 | 1 | D7 | D9 |
 | 2 | D6 | D10 |
