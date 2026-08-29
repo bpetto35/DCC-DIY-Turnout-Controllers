@@ -1,6 +1,6 @@
 # Manage up to 4 Turnouts using CMRInet of JMRI
 
-## Reuse the first design for Fleischmann turnout PCB
+Reuse the first design for Fleischmann turnout PCB
 
 ## Key Features
 * USB loop from JRMI
