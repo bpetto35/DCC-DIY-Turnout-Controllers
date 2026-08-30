@@ -88,7 +88,11 @@ void loop() {
   for (int turnoutIdx=0; turnoutIdx<4; turnoutIdx++) {
     digitalWrite(turnouts[turnoutIdx].relayLedPin, cmri.get_bit(turnoutIdx));
     turnouts[turnoutIdx].buttonState = digitalRead(turnouts[turnoutIdx].buttonPin);
-    cmri.set_bit(turnoutIdx, !turnouts[turnoutIdx].buttonState);
+    if (turnouts[turnoutIdx].timestamp + RELAI_THRESHOLD < now) {
+      if (turnouts[turnoutIdx].buttonState == LOW) {
+        turnouts[turnoutIdx].timestamp = now;
+        cmri.set_bit(turnoutIdx, !turnouts[turnoutIdx].buttonState);
+      }
 
 //    if (turnouts[turnoutIdx].timestamp + RELAI_THRESHOLD < now) {
 //      turnouts[turnoutIdx].buttonState = digitalRead(turnouts[turnoutIdx].buttonPin);
@@ -100,7 +104,7 @@ void loop() {
 //        turnouts[turnoutIdx].relayState = (turnouts[turnoutIdx].relayState == LOW) ? HIGH : LOW;
         //digitalWrite(turnouts[turnoutIdx].relayLedPin, turnouts[turnoutIdx].relayState);
 //      }
-//    }
+    }
   }
 }
 
