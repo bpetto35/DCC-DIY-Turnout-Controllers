@@ -1,6 +1,11 @@
 # DCC and DIY Turnout Accessories
 Electronic modules to control, pilot of Fleischmann or Kato Turnouts
 
+## Loconet module
+Define new loconet compatible module to pilot the Kato turnout and make the interface between JMRI and the layout
+* A Loconet master shield
+* A Loconet turnout shield
+
 ## CMRI module
 * PCB is identical to Fleischmann version 2.0
 * No relay, just LED and button but reuse the previous PCB
