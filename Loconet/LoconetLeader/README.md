@@ -1,4 +1,4 @@
-# Master Loconet
+# Loconet Leader
 
 ## Attribution/Licence
 This project is largely inspired by the project **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella), under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
@@ -32,4 +32,4 @@ It largely use the data and electronic schematics.
 - Remove the 12V header and just keep the barrel
 
 ## Schematics
-![LoconetMaster Schematics](/Loconet/LoconetMaster/images/Schematic_Loconet-Shield_2026-09-01.png?raw=true)
+![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-03.png?raw=true)
