@@ -13,3 +13,6 @@ Supports up to 4 pairs of LED
 Loconet operation behavior
 - Send OPC_SW_REQ when input is pressed to toggle the associated Loconet Turnout or Switch state
 - When receive OPC_SW_REP, set the pair of LEDs state
+
+## Schematics
+![LoconetTurnout Schematics](/Loconet/LoconetTurnout/images/Schematic_Loconet-Turnout-Command_2026-09-03.png?raw=true)
