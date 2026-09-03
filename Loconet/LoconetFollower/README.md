@@ -1,5 +1,7 @@
 # Loconet Follower
 
+No Arduino sketch in this part, the usage is in the user shield.
+
 ## Attribution/Licence
 This project is largely inspired by the project **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella), under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
 It largely use the data and electronic schematics.
