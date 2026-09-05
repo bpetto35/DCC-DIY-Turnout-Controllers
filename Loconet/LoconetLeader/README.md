@@ -31,5 +31,10 @@ It largely use the data and electronic schematics.
 - Use **SMD** components instead of **through-hole**
 - Remove the 12V header and just keep the barrel
 
+## Arduino code
+- bridge between the Serial/USB and the Serial1/UART of the Arduino Uno R4 Minima
+- Serial/USB can be connected to a PC with JMRI
+- Serial1/UART will be connected to the RJ12 and loconet bus
+
 ## Schematics
 ![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-03.png?raw=true)
