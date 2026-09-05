@@ -1,6 +1,7 @@
 # Loconet Follower
 
 No Arduino sketch in this part, the usage is in the user shield.
+This should be a top shield and with the U shape, it shoudl allow intermediate shield to be accessible.
 
 ## Attribution/Licence
 This project is largely inspired by the project **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella), under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
@@ -23,5 +24,8 @@ Both RJ12 can receive and send messages
 - the LED is ON when Arduino is ON on the USB or own DC barrel
 - the reset allow to restart the sketch
 
+### LNCV programmation indicator
+- [2026/09/05] add a LED on pin D13 (LED_BUILTIN) to indicate when the device is in LoconetCV programmation mode
+
 ## Schematics
-![LoconetFollower Schematics](/Loconet/LoconetFollower/images/Schematic_Loconet-Turnout-Shield_2026-09-03.png?raw=true)
+![LoconetFollower Schematics](/Loconet/LoconetFollower/images/Schematic_Loconet-Turnout-Shield_2026-09-05.png?raw=true)
