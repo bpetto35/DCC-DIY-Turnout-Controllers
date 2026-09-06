@@ -31,11 +31,12 @@ void setup() {
 void loop() {
     locoSerial.process();
 
-    if (Serial.available()) {
+    while (Serial.available()) {
         uint8_t newByte = Serial.read() & 0xFF; 
         LnMsg * rxPacket = lnSerialSend.addByte (newByte);
         if (rxPacket != nullptr) {
             locoBus.broadcast (*rxPacket);
+            break;
         }
     }
 }

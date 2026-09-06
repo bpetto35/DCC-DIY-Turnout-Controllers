@@ -35,6 +35,7 @@ It largely use the data and electronic schematics.
 - bridge between the Serial/USB and the Serial1/UART of the Arduino Uno R4 Minima
 - Serial/USB can be connected to a PC with JMRI
 - Serial1/UART will be connected to the RJ12 and loconet bus
+- in loop, read byte per byte until a Loconet message is reconstructed or no data on Serial
 
 ## Schematics
 ![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-03.png?raw=true)
