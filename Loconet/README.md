@@ -49,7 +49,10 @@ Link: [Loconet Follower README](/Loconet/LoconetFollower/README.md)
 ## Turnout Command
 This shield is fully original and based on my previous work for Fleischmann or Kato Arduino shields.
 The Arduino ino sketch is original and use the mrrwa/Loconet2 lib.
+
 This shield need to be stack with a Loconet Follower to be fully functional.
+
+Link: [Turnout README](/Loconet/LoconetTurnout/README.md)
 
 ### Features
 - support 4 turnouts per shield
