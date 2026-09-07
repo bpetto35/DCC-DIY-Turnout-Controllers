@@ -12,6 +12,8 @@ It largely use the data and electronic schematics.
 
 The Arduino ino sketch is original and use the mrrwa/Loconet2 lib.
 
+Link: [Loconet Leader README](/Loconet/LoconetLeader/README.md)
+
 ### Features
 - read from Serial1 or USB Loconet messages
 - write to USB or Serial1 Loconet messages
@@ -31,6 +33,8 @@ The Arduino ino sketch is original and use the mrrwa/Loconet2 lib.
 ### Attribution/Licence
 This project is largely inspired by the project **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella), under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
 It largely use the data and electronic schematics.
+
+Link: [Loconet Follower README](/Loconet/LoconetFollower/README.md)
 
 ### Features
 - 2 RJ12 connectors
