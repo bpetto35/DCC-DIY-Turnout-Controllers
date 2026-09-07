@@ -1,8 +1,9 @@
-# Arduino LocoNet Shields
+# Arduino Uno R4 LocoNet Shields
 
-I will present 2 shields in this part.
-- Loconet Leader (from **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)**)
-- Turnout Loconet
+I will present few shields in this part.
+- Loconet Leader (inspired by **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)**)
+- Loconet Follower (inspired by **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)**)
+- Turnout
 
 ## Loconet Leader
 ### Attribution/Licence
