@@ -60,3 +60,5 @@ Link: [Turnout README](/Loconet/LoconetTurnout/README.md)
 - read button state and send a message onto the Loconet bus
 - from Loconet message, write the output to light one of the 2 LEDs
 - allow LNCV to configure addresses
+- use Arduino female/male headers to allow a shield to be stack on top
+
