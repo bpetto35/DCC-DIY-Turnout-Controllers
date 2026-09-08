@@ -38,4 +38,4 @@ It largely use the data and electronic schematics.
 - in loop, read byte per byte until a Loconet message is reconstructed or no data on Serial
 
 ## Schematics
-![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-03.png?raw=true)
+![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-09.png?raw=true)
