@@ -28,4 +28,4 @@ Both RJ12 can receive and send messages
 - [2026/09/05] add a LED on pin D13 (LED_BUILTIN) to indicate when the device is in LoconetCV programmation mode
 
 ## Schematics
-![LoconetFollower Schematics](/Loconet/LoconetFollower/images/Schematic_Loconet-Turnout-Shield_2026-09-05.png?raw=true)
+![LoconetFollower Schematics](/Loconet/LoconetFollower/images/Schematic_Loconet-Turnout-Shield_2026-09-09.png?raw=true)
