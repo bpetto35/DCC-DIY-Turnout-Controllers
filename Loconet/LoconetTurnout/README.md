@@ -21,4 +21,4 @@ Need 5 plugs to work properly
 - four KF2EDGK-3.5-4P ([LCSC reference: C440849](https://www.lcsc.com/product-detail/C440849.html?s_z=n_q_C440849&globalKeyword=C440849))
 
 ## Schematics
-![LoconetTurnout Schematics](/Loconet/LoconetTurnout/images/Schematic_Loconet-Turnout-Command_2026-09-03.png?raw=true)
+![LoconetTurnout Schematics](/Loconet/LoconetTurnout/images/Schematic_Loconet-Turnout-Command_2026-09-09.png?raw=true)
