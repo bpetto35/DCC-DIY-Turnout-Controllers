@@ -14,6 +14,7 @@ It largely use the data and electronic schematics.
 ### Loconet Master
 - header H1 allow to set/unset the loconet master as indicated in **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella)
 - the R3 and R4 generate 13mA of consumption with the DC 12V
+- need to command in addition the BOM a Shunts 2.54mm like LCSC C5305
 
 ### Loconet Read/Write
 - signal LNET can be the write from D1 or a value to read in D0
