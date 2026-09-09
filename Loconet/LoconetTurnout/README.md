@@ -17,8 +17,8 @@ Loconet operation behavior
 
 ## Complements
 Need 5 plugs to work properly
-- one KF2EDGK-3.5-8P (LCSC reference: C440853)
-- four KF2EDGK-3.5-4P (LCSC reference: C440849)
+- one KF2EDGK-3.5-8P ([LCSC reference: C440853](https://www.lcsc.com/product-detail/C440853.html?s_z=n_q_C440853&globalKeyword=C440853))
+- four KF2EDGK-3.5-4P ([LCSC reference: C440849](https://www.lcsc.com/product-detail/C440849.html?s_z=n_q_C440849&globalKeyword=C440849))
 
 ## Schematics
 ![LoconetTurnout Schematics](/Loconet/LoconetTurnout/images/Schematic_Loconet-Turnout-Command_2026-09-03.png?raw=true)
