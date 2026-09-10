@@ -44,8 +44,8 @@ It largely use the data and electronic schematics.
 
 ### DC12 Header
 - a simple DC barrel with some condensators to smooth the voltage
-- (2026/09/10) add a Thermal Fuse (500mA, 24V) to protect the RJ12 cable
-- (2026/09/10) add a TVS diode (24V) to protect the RJ12 cable
+- (2026/09/10) add a PTC Reset Fuse (500mA, 24V) to protect the RJ12 cable [LCSC C516067](https://www.lcsc.com/product-detail/C516067.html?spm=wm.fly.bg.1.xh&lcsc_vid=QgcPVFdfEwQLBFIAEwcNXgVTRFBdUFxST1EMAQdTFFExVlNeTlFZV1VRQ1lfXjsOAxUeFF5JWBYZEEoKFBINSQcJGk4NBhADEA4cHktXRVZADxALGw%3D%3D)
+- (2026/09/10) add a TVS diode (15V) to protect the RJ12 cable [LCSC C86819](https://www.lcsc.com/product-detail/C86819.html?globalKeyword=C86819&s_z=n_q_C86819)
 
 ### Power LED and Reset
 - the LED is ON when Arduino is ON on the USB or own DC barrel
@@ -63,4 +63,4 @@ It largely use the data and electronic schematics.
 - in loop, read byte per byte until a Loconet message is reconstructed or no data on Serial
 
 ## Schematics
-![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-10.png?raw=true)
+![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-11.png?raw=true)
