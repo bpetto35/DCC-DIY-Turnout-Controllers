@@ -10,7 +10,7 @@ It largely use the data and electronic schematics.
 2026/09/10: Add support to 2 modes
 - BRIDGE: used with an Arduino board
 - INJECTOR: used standalone, BRIDGE jumper off
-- add DV12 protection with a Thermal Fuse
+- add DC12V protection with a PTC Reset Fuse
 
 ### Bridge mode
 - BRIDGE jumper can be set to enable Loconet Master
