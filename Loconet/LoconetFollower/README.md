@@ -11,8 +11,8 @@ It largely use the data and electronic schematics.
 ### Loconet Header
 - allow 2 RJ12 connector to cascade Loconet device
 - send/receive Loconet messages over pin 3 and 4
-- pin 2 and 5 not used
-- pin 1 and 6 not used
+- pin 2 and 5 used only to mirror GND on the 2 RJ12
+- pin 1 and 6 used only to mirror DC12V on the 2 RJ12
 
 Both RJ12 can receive and send messages
 
