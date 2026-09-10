@@ -25,7 +25,7 @@ Both RJ12 can receive and send messages
 - the reset allow to restart the sketch
 
 ### LNCV programmation indicator
-- [2026/09/05] add a LED on pin D13 (LED_BUILTIN) to indicate when the device is in LoconetCV programmation mode
+- [2026/09/10] add a LED on pin D13 (LED_BUILTIN) to indicate when the device is busy
 
 ## Schematics
 ![LoconetFollower Schematics](/Loconet/LoconetFollower/images/Schematic_Loconet-Turnout-Shield_2026-09-09.png?raw=true)

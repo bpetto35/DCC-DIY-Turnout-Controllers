@@ -31,6 +31,7 @@ It largely use the data and electronic schematics.
 
 ### Loconet Header Supp (2026/09/10)
 - RJ12 connector to chain the Loconet Bus
+- all signals are mirrored
 
 ### Loconet Master
 - header BRIDGE allow to set/unset the loconet master as indicated in **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella)
@@ -62,4 +63,4 @@ It largely use the data and electronic schematics.
 - in loop, read byte per byte until a Loconet message is reconstructed or no data on Serial
 
 ## Schematics
-![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-10.pdf?raw=true)
+![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-10.png?raw=true)
