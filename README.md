@@ -3,7 +3,7 @@ Electronic modules to control, pilot of Fleischmann or Kato Turnouts
 
 ## Project status: active vs. abandoned
 
-Only part of the repository is under active development. Bruno has confirmed:
+Only part of the repository is under active development.
 
 | Directory | Status |
 |---|---|
@@ -16,11 +16,14 @@ Only part of the repository is under active development. Bruno has confirmed:
 | `Loconet/` (`LoconetLeader`, `LoconetFollower`, `LoconetTurnout`) | **Active.** |
 
 
-## Loconet module
-Define new loconet compatible module to pilot the Kato turnout and make the interface between JMRI and the layout
+## Loconet modules
+Define new loconet compatible modules to pilot the Kato turnout and make the interface between JMRI and the layout
 * A Loconet master shield
 * A Loconet turnout shield
 * A Loconet follower shield to stack upon the turnout shield
+
+## Kato modules
+* **YD6016Interface** A board to distribute DCC and up to 4 detection occupencies, designed to connect to a YD6016-LN-CS module
 
 ## Fleischmann modules
 ### Mimic pannel
