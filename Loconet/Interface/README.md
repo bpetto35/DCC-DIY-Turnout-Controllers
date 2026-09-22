@@ -10,11 +10,15 @@ Loconet read and write are provided by the **[Loconet lib v2](https://github.com
 
 ## Features
 Allow to work in 3 modes:
-| Mode   | ARDUINO | TERM  | VIN   |
-| ------ | ------- | ----- | ----- |
-| BRIGDE | YES     | YES   | CAN   |
-| INJECT | NO      | NO    | NO    |
-| NODE   | YES     | NO    | CAN   |
+| Mode   | ARDUINO | TERM  | VIN   | STACK HDR  |
+| ------ | ------- | ----- | ----- |------------|
+| BRIGDE | YES     | YES   | CAN   | HDR BOTTOM |
+| INJECT | NO      | NO    | NO    | NO HDR     |
+| NODE   | YES     | NO    | CAN   | HDR DUAL   |
+
+STACK HDR:
+- **HDR BOTTOM**: a simple header 0.1 can be soldered
+- **HDR DUAL**: need a female/male header that allow to stack a shield on it like [Arduino R3 Header](https://amzn.eu/d/0bbIO94F)
 
 ### BRIDGE
 In that mode, we need an Arduino R4 Uno to support the code. The basic behavior is to copy the data from and to Serial1 UART to and from the USB. It support one or both RJ12 Loconet signal.
