@@ -16,9 +16,9 @@ Allow to work in 3 modes:
 | INJECT | NO      | NO    | NO    | NO HDR     |
 | NODE   | YES     | NO    | CAN   | HDR DUAL   |
 
-STACK HDR:
-- **HDR BOTTOM**: a [simple header](https://amzn.eu/d/093mfFJb) 0.1 can be soldered
-- **HDR DUAL**: need a female/male Arduino header that allow to stack a shield on it like [Arduino R3 Header](https://amzn.eu/d/0bbIO94F) must be soldered
+> [!NOTE]
+> - **HDR BOTTOM**: a [simple header](https://amzn.eu/d/093mfFJb) 0.1 can be soldered
+> - **HDR DUAL**: need a female/male Arduino header that allow to stack a shield on it like [Arduino R3 Header](https://amzn.eu/d/0bbIO94F) must be soldered
 
 ### BRIDGE
 In that mode, we need an Arduino R4 Uno to support the code. The basic behavior is to copy the data from and to Serial1 UART to and from the USB. It support one or both RJ12 Loconet signal.
