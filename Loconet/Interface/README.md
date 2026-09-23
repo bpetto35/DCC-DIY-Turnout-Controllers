@@ -37,6 +37,14 @@ In that mode, it is the equivalent of the Follower board. This mode need to an A
 
 By enabling the VIN jumper, the Arduino can receive power from the Jack Barrel of the board.
 
+## PINS
+| Pin    | Function | Comment |
+| ------ | -------- |-------- |
+| D0     | RX Serial1 | |
+| D1     | TX Serial1 | |
+| A0     | RX activity LED | |
+| A1     | TX activity LED | |
+
 
 ## Changelogs
 
