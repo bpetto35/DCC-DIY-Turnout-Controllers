@@ -40,10 +40,18 @@ By enabling the VIN jumper, the Arduino can receive power from the Jack Barrel o
 ## PINS
 | Pin    | Function | Comment |
 | ------ | -------- |-------- |
-| D0     | RX Serial1 | |
-| D1     | TX Serial1 | |
+| D0     | RX  | Connected to the UART Serial1 RX of the Uno R4 |
+| D1     | TX  | Connected to the UART Serial1 TX of the Uno R4 |
 | A0     | RX activity LED | |
 | A1     | TX activity LED | |
+
+## LED
+| LED    | Color    | Comment |
+| ------ | -------- |-------- |
+| LNET PWR | Green  | ON when 12V is present in one of the RJ12 connector |
+| RX activity | TBD | ON when RX pin (D0) receive data |
+| TX activity | TBD | ON when TX pin (D1) send data|
+| ARD PWR | Green | ON when the Arduino Uno 3.3V pin emit current |
 
 
 ## Changelogs
