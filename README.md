@@ -13,7 +13,7 @@ Only part of the repository is under active development.
 | `Kato/DCCDetection/` | **Abandoned.** |
 | `Kato/Mimic-Panel/` | **Abandoned.** |
 | `Kato/YD6016Interface/` | **Active.** |
-| `Loconet/` (`LoconetLeader`, `LoconetFollower`, `LoconetTurnout`) | **Active.** |
+| `Loconet/` (`LoconetLeader`, `LoconetFollower`, `LoconetTurnout`, `Interface`) | **Active WIP** for `Interface`<br> **Completed** for the 3 others |
 
 
 ## Loconet modules
