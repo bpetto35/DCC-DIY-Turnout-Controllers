@@ -7,6 +7,9 @@
 - accept 4 occupencies detection signals from YD6016LNCS
 - route occupency to each rail
 
+## Images
+![YD6016Interface 1.0 PCB](/images/yd1606kato.png?raw=true)
+  
 ## Schematic
 
 ![Interface Schematics](/Kato/YD6016Interface/images/Schematic_DCC-Kato-YD6016_2026-09-11.png?raw=true)
