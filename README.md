@@ -22,8 +22,11 @@ Define new loconet compatible modules to pilot the Kato turnout and make the int
 * A Loconet turnout shield
 * A Loconet follower shield to stack upon the turnout shield
 
+![Loconet Leader 1.0 PCB](/images/loconetleader.png?raw=true)
+
 ## Kato modules
 * **YD6016Interface** A board to distribute DCC and up to 4 detection occupencies, designed to connect to a YD6016-LN-CS module
+![YD6016Interface 1.0 PCB](/images/yd1606kato.png?raw=true)
 
 ## Fleischmann modules
 ### Mimic pannel
