@@ -23,7 +23,7 @@ Allow to work in 3 modes:
 ### BRIDGE
 In that mode, we need an Arduino R4 Uno to support the code. The basic behavior is to copy the data from and to Serial1 UART to and from the USB. It support one or both RJ12 Loconet signal.
 
-Must activate the TERM jumper to enable the Loconet Terminaison of 13.6mA consumption on the bus.
+Must activate the TERM jumper to enable the Loconet Terminaison of 13.6mA consumption on the bus. The TERM jumper is moved from before the 13.6mA stage to after and it has a leg now on the LNET signal from pin3 and 4 of the RJ12 connector. The other legs is on the exit of the stage named LOCONET TERMINAL in the Interface schematic or LOCONET MASTER in the Leader schematic.
 
 By enabling the VIN jumper, the Arduino can receive power from the Jack Barrel of the board.
 
