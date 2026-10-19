@@ -24,6 +24,7 @@ Define new loconet compatible modules to pilot the Kato turnout and make the int
 
 ![Loconet Leader 1.0 PCB](/images/loconetleader.png?raw=true)
 
+- 2026/10/20: found I made a mistake when replacing R5 and R10 by cheaper model, I did not check I changed them from 4.7k to 4.7.
 - 2026/10/18: still not working properly, need to rework the read/write stages
 
 ## Kato modules
