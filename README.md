@@ -16,13 +16,15 @@ Only part of the repository is under active development.
 | `Loconet/` (`LoconetLeader`, `LoconetFollower`, `LoconetTurnout`, `Interface`) | **Active WIP** for `Interface`<br> **Completed** for the 3 others |
 
 
-## Loconet modules
+## Loconet modules (WIP)
 Define new loconet compatible modules to pilot the Kato turnout and make the interface between JMRI and the layout
 * A Loconet master shield
 * A Loconet turnout shield
 * A Loconet follower shield to stack upon the turnout shield
 
 ![Loconet Leader 1.0 PCB](/images/loconetleader.png?raw=true)
+
+- 2026/10/18: still not working properly, need to rework the read/write stages
 
 ## Kato modules
 * **YD6016Interface** A board to distribute DCC and up to 4 detection occupencies, designed to connect to a YD6016-LN-CS module
