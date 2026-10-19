@@ -53,6 +53,10 @@ By enabling the VIN jumper, the Arduino can receive power from the Jack Barrel o
 | TX activity | TBD | ON when TX pin (D1) send data|
 | ARD PWR | Green | ON when the Arduino Uno 3.3V pin emit current |
 
+## Changes from Leader/Follower boards
+- LED resistance value with a factor of 2 or 3
+- replace the jumper HEADER 2.54 connectors by cheaper and higher (more then 7mm) models
+- TERM jumper position (ex: BRIDGE)
 
 ## Changelogs
 
