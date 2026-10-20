@@ -28,4 +28,4 @@ Both RJ12 can receive and send messages
 - [2026/09/10] add a LED on pin D13 (LED_BUILTIN) to indicate when the device is busy
 
 ## Schematics
-![LoconetFollower Schematics](/Loconet/LoconetFollower/images/Schematic_Loconet-Turnout-Shield_2026-10-20.png?raw=true)
+![LoconetFollower Schematics](/Loconet/LoconetFollower/images/Schematic_Loconet-Follower-Shield_2026-10-20.png?raw=true)
