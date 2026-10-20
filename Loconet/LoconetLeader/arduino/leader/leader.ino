@@ -11,6 +11,7 @@
 #include <LocoNet2.h>
 #include <LocoNetStreamUnoR4.h>
 
+#define JMRI_LNET_BAUD 57600
 
 LocoNetMessageBuffer lnSerialSend;
 
@@ -19,7 +20,7 @@ LocoNetDispatcher locoParser(&locoBus);
 LocoNetStreamUnoR4 locoSerial(&Serial1, &locoBus);
 
 void setup() {
-    Serial.begin(LOCONET_BAUD);
+    Serial.begin(JMRI_LNET_BAUD);
     locoSerial.start();
     locoParser.onPacket(CALLBACK_FOR_ALL_OPCODES, [] (const lnMsg *rxPacket)
     {
