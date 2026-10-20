@@ -11,17 +11,6 @@
 #include <LocoNet2.h>
 #include <LocoNetStreamUnoR4.h>
 
-/*
-void log_printf (const char * format, ...)
-{
-    char buffer[256];
-    va_list args;
-    va_start (args, format);
-    vsprintf (buffer,format, args);
-    Serial.print (buffer);
-    va_end (args);
-}
-*/
 
 LocoNetMessageBuffer lnSerialSend;
 
