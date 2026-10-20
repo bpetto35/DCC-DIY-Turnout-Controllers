@@ -25,7 +25,7 @@ Both RJ12 can receive and send messages
 - the reset allow to restart the sketch
 
 ### LNCV programmation indicator
-- [2026/10/20] fix R1 (4.7k), R2 (33k), R4 (4.7k) and R5 (4.7k) values
+- [2026/10/20] fix R1 (4.7k), R2 (33k), R3 (4.7k), R4 (4.7k) and R5 (4.7k) values
 - [2026/09/10] add a LED on pin D13 (LED_BUILTIN) to indicate when the device is busy
 
 ## Schematics
