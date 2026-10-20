@@ -7,6 +7,10 @@ It largely use the data and electronic schematics.
 ## Features
 
 ### Changelogs
+2026/10/20: fix values of the resistors
+- R5 and R10 are fixed to 4.7k instead of 4.7 to be able to use the board
+- R1, R2 are increased to lower the LED intensity
+
 2026/09/10: Add support to 2 modes
 - BRIDGE: used with an Arduino board
 - INJECTOR: used standalone, BRIDGE jumper off
@@ -63,4 +67,4 @@ It largely use the data and electronic schematics.
 - in loop, read byte per byte until a Loconet message is reconstructed or no data on Serial
 
 ## Schematics
-![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Master-Shield_2026-09-11.png?raw=true)
+![LoconetLeader Schematics](/Loconet/LoconetLeader/images/Schematic_Loconet-Leader-Shield_2026-10-20.png?raw=true)
