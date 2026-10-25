@@ -18,9 +18,17 @@ Only part of the repository is under active development.
 
 ## Loconet modules (WIP)
 Define new loconet compatible modules to pilot the Kato turnout and make the interface between JMRI and the layout
-* A Loconet master shield
-* A Loconet turnout shield
-* A Loconet follower shield to stack upon the turnout shield
+
+### Modules 2.0 version
+* A Loconet interface shield 
+  * 2 RJ12
+  * 1 DC12 jack barrel
+* A turnout top shield
+
+### Archived modules
+* A Loconet master shield (use the 1.1 version)
+* A Loconet turnout shield 
+* A Loconet follower shield to stack upon the turnout shield (use the 1.1 version)
 
 ![Loconet Leader 1.0 PCB](/images/loconetleader.png?raw=true)
 
