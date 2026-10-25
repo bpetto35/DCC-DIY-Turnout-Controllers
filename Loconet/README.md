@@ -1,10 +1,51 @@
 # Arduino Uno R4 LocoNet Shields
 
 I will present few shields in this part.
-- Loconet Leader (inspired by **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)**)
-- Loconet Follower (inspired by **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)**)
+- Loconet Interface (inspired by **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)**)
 - Turnout
 
+## Loconet interface
+### Attribution/Licence
+This project is largely inspired by the project **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella), under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
+It largely use the data and electronic schematics.
+
+The Arduino ino sketch is original and use the mrrwa/Loconet2 lib.
+
+Link: [Loconet Leader README](/Loconet/Interface/README.md)
+
+### Features
+- read from Serial1 or USB Loconet messages
+- Serial1 connect to a RJ12 connector (pin 3 and pin 4)
+- Send the 12V DC in pin 1 and pin 6 and GND to pin 2 and pin 5 to emulate a Loconet T
+- use the 12V DC to power the Arduino
+
+### What change
+- in Arduino shield form factor
+- use **SMD** components instead of **through-hole**
+- reuse the loconet schematics for
+  - read/write
+  - consume few milli amps
+  - 12V barrel
+- remove the 12V header and just keep the barrel
+
+## Turnout Child Board
+This shield is fully original and based on my previous work for Fleischmann or Kato Arduino shields.
+The Arduino ino sketch is original and use the mrrwa/Loconet2 lib.
+
+This shield need to be stack with a Loconet Follower to be fully functional.
+
+Link: [Turnout README](/Loconet/Turnout/README.md)
+
+### Features
+- support 4 turnouts per shield
+- a turnout is composed of 1 momentary button and 2 LEDs
+- read button state and send a message onto the Loconet bus
+- from Loconet message, write the output to light one of the 2 LEDs
+- allow LNCV to configure addresses
+- stack on top the Interface board
+
+
+# Archived
 ## Loconet Leader
 ### Attribution/Licence
 This project is largely inspired by the project **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella), under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
@@ -29,6 +70,9 @@ Link: [Loconet Leader README](/Loconet/LoconetLeader/README.md)
   - 12V barrel
 - remove the 12V header and just keep the barrel
 
+### Errata
+Verison 1.1 is usable. Do not try to use the version 1.0.
+
 ## Loconet Follower
 ### Attribution/Licence
 This project is largely inspired by the project **[arduino-loconetshield](https://github.com/lucadentella/arduino-loconetshield)** by [lucadentella](https://github.com/lucadentella), under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** license.
@@ -45,6 +89,9 @@ Link: [Loconet Follower README](/Loconet/LoconetFollower/README.md)
 - in Arduino shield form factor
 - use **SMD** components instead of **through-hole**
 - only reuse the read/write
+
+### Errata
+Verison 1.1 is usable. Do not try to use the version 1.0.
 
 ## Turnout Command
 This shield is fully original and based on my previous work for Fleischmann or Kato Arduino shields.
