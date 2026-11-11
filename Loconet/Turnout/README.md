@@ -3,7 +3,7 @@
 Redefine the board use to command Kato and Fleischmann turnouts
 
 ## Description
-Should be stack between the Arduino R4 and the Loconet Follower shield board.
+Should be stack on top of Interface shield board.
 
 Supports up to 4 inputs like momentary buttons
 Supports up to 4 pairs of LED
