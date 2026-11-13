@@ -23,8 +23,8 @@ The card will use a CDU to inject current in the Kato turnout during few millise
 | D6  | Direction of rotation |
 | D7  | receive the nSLEEP from the DRV8256E |
 | D8  | receive the nFAULT from the DRV8256E |
-| A2  | charge % of the CDU |
-| A3  | input tension meter % |
+| A2  | % charge of the CDU |
+| A3  | % input tension meter |
 
 ## Firmware
 The duration of the pulse is defined in the LNCV 1 of each device.
