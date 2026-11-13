@@ -5,9 +5,9 @@ Replacing the YD8008/YD6940 by a Loconet motor driver to effectively pilot a Tur
 
 
 ## Specification
-This a Interface child card to put on top of it.
-Up to 4 motor driver TI DRV8256E per card.
-The card will use a CDU to inject current in the Kato turnout during few milliseconds and limit the current drain.
+- This a Interface child card to put on top of it.
+- Up to 4 motor driver TI DRV8256E per card.
+- The card will use a CDU to inject current in the Kato turnout during few milliseconds and limit the current drain.
 
 ## Pin definition
 > [!WARNING]  
