@@ -3,13 +3,13 @@
 Redefine the board use to command Kato and Fleischmann turnouts
 
 ## Description
-Should be stack on top of Interface shield board.
+This a Interface child card to put on top of it.
 
 Supports up to 4 inputs like momentary buttons
 Supports up to 4 pairs of LED
 
-- 1 input will be assoicted to a Loconet Turnout or Switch
-- 1 pair of LED is also associated to a Loconet Turnout or Switch
+- 1 input will be associated to a Loconet Turnout
+- 1 pair of LED is also associated to a Loconet Turnout
 
 ## Pin usage
 > [!WARNING]  
