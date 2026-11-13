@@ -11,7 +11,22 @@ Supports up to 4 pairs of LED
 - 1 input will be assoicted to a Loconet Turnout or Switch
 - 1 pair of LED is also associated to a Loconet Turnout or Switch
 
-Loconet operation behavior
+## Pin usage
+> [!WARNING]  
+> Pin D0 and D1 are used by Serial1 for the Loconet bus. A0 and A1 are used for the activity of RX and TX.
+
+| Pin  | Function |
+| ------------- | ------------- |
+| D4  | Button Turnout #1  |
+| D5  | Button Turnout #2  |
+| D6  | Button Turnout #3  |
+| D7  | Button Turnout #4  |
+| D8  | LED state Turnout #1  |
+| D9  | LED state Turnout #2  |
+| D10  | LED state Turnout #3  |
+| D11  | LED state Turnout #4  |
+
+## Loconet operation
 - Send OPC_SW_REQ when input is pressed to toggle the associated Loconet Turnout or Switch state
 - When receive OPC_SW_REP, set the pair of LEDs state
 
