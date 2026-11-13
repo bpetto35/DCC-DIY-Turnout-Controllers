@@ -1,4 +1,4 @@
-# Pilot child card
+# Pilot child card for Loconet Interface
 
 ## Objective
 Replacing the YD8008/YD6940 by a DIY Loconet motor driver.
