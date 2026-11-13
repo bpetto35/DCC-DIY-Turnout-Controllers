@@ -1,4 +1,4 @@
-# Turnout card for Loconet Interface
+# Turnout child card for Loconet Interface
 
 Redefine the board use to command Kato turnouts
 
