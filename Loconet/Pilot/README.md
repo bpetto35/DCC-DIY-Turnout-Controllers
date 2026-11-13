@@ -1,13 +1,14 @@
 # Pilot child card
 
 ## Objective
-Replacing the YD8008/YD6940 by a Loconet motor driver to effectively pilot a Turnout.
-
+Replacing the YD8008/YD6940 by a DIY Loconet motor driver.
 
 ## Specification
-- This a Interface child card to put on top of it.
-- Up to 4 motor driver TI DRV8256E per card.
-- The card will use a CDU to inject current in the Kato turnout during few milliseconds and limit the current drain.
+This a Interface child card to put on top of it.
+
+Up to 4 motor driver TI DRV8256E per card.
+
+The card will use a CDU to inject current in the Kato turnout during few milliseconds and limit the current drain.
 
 ## Pin definition
 > [!WARNING]  
@@ -32,5 +33,13 @@ Only send a pulse at a time, each pulse can happen after a minimum of pulse dela
 ## Loconet operation
 - on reception of OPC_SW_REQ, configure the motor and apply the configuration
 - send OPC_SW_REP, when the pulse delay is elapsed
+
+## LNCV configuration
+There is one LNCV structure per motor
+| LNCV @ | Description | Default |
+| 0      | Address of the motor |  |
+| 1      | Enable the motor | FALSE |
+| 2      | Pulse delay | 20 ms |
+| 3      | Fault presence (read-only) | FALSE |
 
 ## Schematics
