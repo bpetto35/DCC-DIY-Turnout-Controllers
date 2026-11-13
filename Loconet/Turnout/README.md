@@ -1,4 +1,4 @@
-# Turnout Child for Loconet Interface
+# Turnout card for Loconet Interface
 
 Redefine the board use to command Kato and Fleischmann turnouts
 
