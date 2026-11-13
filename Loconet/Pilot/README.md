@@ -36,7 +36,9 @@ Only send a pulse at a time, each pulse can happen after a minimum of pulse dela
 
 ## LNCV configuration
 There is one LNCV structure per motor
+
 | LNCV @ | Description | Default |
+|-----|-------------|
 | 0      | Address of the motor |  |
 | 1      | Enable the motor | FALSE |
 | 2      | Pulse delay | 20 ms |
