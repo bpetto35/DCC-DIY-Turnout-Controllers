@@ -29,4 +29,8 @@ The card will use a CDU to inject current in the Kato turnout during few millise
 The duration of the pulse is defined in the LNCV 1 of each device.
 Only send a pulse at a time, each pulse can happen after a minimum of pulse delay added of 10 milliseconds of cooldown.
 
+## Loconet operation
+- on reception of OPC_SW_REQ, configure the motor and apply the configuration
+- send OPC_SW_REP, when the pulse delay is elapsed
+
 ## Schematics
