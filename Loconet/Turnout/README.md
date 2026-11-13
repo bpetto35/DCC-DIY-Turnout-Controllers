@@ -30,6 +30,14 @@ Supports up to 4 pairs of LED
 - Send OPC_SW_REQ when input is pressed to toggle the associated Loconet Turnout or Switch state
 - When receive OPC_SW_REP, set the pair of LEDs state
 
+## LNCV configuration
+There is one LNCV structure per input
+
+| @LNCV | Description | Default |
+|------|-------------|---------|
+| 0    | Address of the input |  |
+| 1    | Enable the input | FALSE |
+
 ## Complements
 Need 6 plugs KF2EDGK-3.5-4P ([LCSC reference: C440849](https://www.lcsc.com/product-detail/C440849.html?s_z=n_q_C440849&globalKeyword=C440849)) to work properly
 
